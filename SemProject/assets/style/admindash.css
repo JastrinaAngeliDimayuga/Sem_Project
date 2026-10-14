@@ -1,0 +1,100 @@
+/* GENERAL STYLE */
+body {
+    margin: 0;
+    background-color: #f4efeb;
+    font-family: Arial, sans-serif;
+    color: #352720;
+}
+
+/* TOP NAVIGATION BAR */
+.topbar {
+    height: 75px;
+    background-color: #3b2b24;
+    border-bottom: 3px solid #a58b78;
+}
+
+.brand {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.brand:hover {
+    color: #e2c8b5;
+}
+
+.user-info {
+    gap: 18px;
+}
+
+.username {
+    color: white;
+    font-size: 16px;
+}
+
+.notification-btn {
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.notification-btn:hover {
+    color: #d9b99f;
+}
+
+.profile-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #e7d6c9;
+}
+
+/* DASHBOARD LAYOUT */
+.dashboard-layout {
+    min-height: calc(100vh - 75px);
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    background-color: #30241f;
+}
+
+.menu-heading {
+    color: #b7a395;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+/* SIDEBAR LINKS */
+.sidebar .nav-link {
+    color: #e9dfd8;
+    padding: 13px 12px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #4b3930;
+    color: white;
+    font-weight: bold;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+    padding: 11px;
+    background-color: #49352b;
+    color: white;
+    border: 1px solid #654c3d;
+    border-radius: 6px;
+}
+
+.logout-btn:hover {
+    background-color: #654838;
+    color: white;
+}
