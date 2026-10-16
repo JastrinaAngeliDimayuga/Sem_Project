@@ -1,0 +1,211 @@
+
+/* Cookie Modal */
+#cookieModal .modal-dialog {
+    max-width: 850px;
+}
+
+#cookieModal .modal-content {
+    border: none;
+    border-radius: 16px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+#cookieModal .modal-header {
+    padding: 8px 10px 12px;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #a98977;
+}
+
+#cookieModal .modal-title {
+    color: #704b38;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#cookieModal .modal-body {
+    padding: 0 10px 10px;
+}
+
+#cookieModal .ingredient-panel {
+    border: 1.5px solid #a85e39;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+#cookieModal .ingredient-layout {
+    display: grid;
+    grid-template-columns: 105px minmax(0, 1fr);
+    gap: 16px;
+}
+
+/* Photo upload */
+#cookieModal .photo-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cookieModal .photo-preview {
+    width: 100%;
+    height: 105px;
+    border-radius: 7px;
+    background: #dedede;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #8b8b8b;
+}
+
+#cookieModal .photo-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#cookieModal .upload-photo {
+    margin-top: 8px;
+    background: #a36c4c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 8px;
+    font-size: 10px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#cookieModal .upload-photo:hover {
+    background: #805037;
+}
+
+#cookieModal .photo-input {
+    display: none;
+}
+
+/* Cookie fields */
+#cookieModal .ingredient-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 16px;
+}
+
+#cookieModal .field-group {
+    min-width: 0;
+}
+
+#cookieModal .field-group.full-width {
+    grid-column: 1 / -1;
+}
+
+#cookieModal .form-label {
+    display: block;
+    margin: 0 0 3px;
+    color: #704b38;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#cookieModal .form-control,
+#cookieModal .form-select {
+    min-height: 34px;
+    border: 1.5px solid #a85e39;
+    border-radius: 5px;
+    font-size: 13px;
+    box-shadow: none;
+}
+
+#cookieModal .form-control:focus,
+#cookieModal .form-select:focus {
+    border-color: #70452e;
+    box-shadow: 0 0 0 2px rgba(168, 94, 57, 0.12);
+}
+
+/* Bottom action buttons */
+#cookieModal .ingredient-actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+
+#cookieModal .icon-action {
+    width: 36px;
+    height: 34px;
+    border: none;
+    border-radius: 3px;
+    background: #a36c4c;
+    color: #fff;
+    box-shadow: 2px 2px 0 #70452e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#cookieModal .icon-action:hover {
+    background: #c18b67;
+}
+
+/* Category buttons */
+#cookieModal .category-action {
+    width: 65px;
+    min-height: 38px;
+    height: auto;
+    padding: 5px 3px;
+    flex-direction: column;
+    gap: 3px;
+    color: #fff;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+#cookieModal .category-action i {
+    font-size: 15px;
+}
+
+#cookieModal .category-action span {
+    font-size: 8px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+#cookieModal .category-action.active {
+    background: #70452e;
+    color: #fff;
+}
+
+#cookieModal .category-action:hover {
+    background: #805037;
+    color: #fff;
+}
+
+
+/* Save button */
+#cookieModal .save-btn {
+    min-height: 34px;
+    padding: 7px 18px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 3px;
+    background: #80553d;
+    color: #fff;
+    font-size: 12px;
+    box-shadow: 3px 3px 0 #5d3d2b;
+    cursor: pointer;
+}
+
+#cookieModal .save-btn:hover {
+    background: #68432f;
+}
+
+#cookieModal .modal-footer {
+    border: none;
+}
