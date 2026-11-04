@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #D8C3AD;
+    color: #352820;
+}
+
+/* ==============================
+   DASHBOARD HEADER
+============================== */
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 22px 40px;
+    background-color: #E8D8C7;
+    border-bottom: 1px solid #C4AD98;
+    color: #352820;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* ==============================
+   NAVIGATION SECTION
+============================== */
+
+.dashboard-background {
+    padding: 20px 0;
+    background-color: #D8C3AD;
+}
+
+.employee-tabs {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.employee-tabs .nav-item {
+    margin: 0;
+    padding: 0;
+}
+
+.employee-tabs .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 110px;
+    padding: 11px 18px;
+    border: 1px solid #6D5140;
+    border-radius: 8px;
+    background-color: #6D5140;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: none;
+    transition: 0.2s ease;
+}
+
+.employee-tabs .nav-link:hover,
+.employee-tabs .nav-link:focus,
+.employee-tabs .nav-link.active {
+    background-color: #513B2E;
+    color: #FFFFFF;
+    border-color: #513B2E;
+}
+
+/* ==============================
+   SEARCH BOX
+============================== */
+
+.search-box {
+    position: relative;
+    width: 100%;
+}
+
+.search-box .form-control {
+    width: 100%;
+    min-height: 44px;
+    padding: 11px 42px 11px 14px;
+    background-color: #F7F2EC;
+    color: #352820;
+    border: 1px solid #B8A08B;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: none;
+    transition: 0.2s ease;
+}
+
+.search-box .form-control::placeholder {
+    color: #8A7665;
+    opacity: 1;
+}
+
+.search-box .form-control:focus {
+    background-color: #FFFFFF;
+    border-color: #6D5140;
+    box-shadow: 0 0 0 3px rgba(109, 81, 64, 0.15);
+    outline: none;
+}
+
+.search-box i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #6D5140;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+/* ==============================
+   DASHBOARD CONTENT
+============================== */
+
+.dashboard-container {
+    padding: 0 32px 30px;
+}
+
+.employee-panel {
+    width: 100%;
+    min-height: 345px;
+    padding: 20px;
+    background-color: #E8D8C7;
+    border: 1px solid #C4AD98;
+    border-radius: 12px;
+}
+
+/* ==============================
+   PANEL HEADER
+============================== */
+
+.panel-header {
+    margin-bottom: 20px;
+}
+
+.brand-title {
+    margin: 0;
+    color: #352820;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* ==============================
+   ADD EMPLOYEE BUTTON
+============================== */
+
+.add-employee-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 18px;
+    background-color: #6D5140;
+    color: #FFFFFF;
+    border: 1px solid #6D5140;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: none;
+    transition: 0.2s ease;
+}
+
+.add-employee-btn:hover,
+.add-employee-btn:focus {
+    background-color: #513B2E;
+    color: #FFFFFF;
+    border-color: #513B2E;
+}
+
+.add-employee-btn i {
+    font-size: 16px;
+}
+
+/* ==============================
+   TABLE CONTAINER
+============================== */
+
+.table-responsive {
+    width: 100%;
+    min-height: 300px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: #F7F2EC;
+    border: 1px solid #B8A08B;
+    border-radius: 10px;
+}
+
+/* ==============================
+   EMPLOYEE TABLE
+============================== */
+
+.employee-table {
+    width: 100%;
+    min-width: 700px;
+    margin: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+    color: #352820;
+}
+
+.employee-table thead th {
+    padding: 16px 18px;
+    background-color: #6D5140;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: left;
+    vertical-align: middle;
+    border: none;
+    border-bottom: 2px solid #513B2E;
+    white-space: nowrap;
+}
+
+.employee-table thead th:last-child {
+    text-align: center;
+}
+
+.employee-table tbody td {
+    padding: 16px 18px;
+    border: none;
+    border-bottom: 1px solid #E2D6CA;
+    vertical-align: middle;
+}
+
+.employee-table tbody tr:nth-child(odd) {
+    background-color: #FBF8F4;
+}
+
+.employee-table tbody tr:nth-child(even) {
+    background-color: #F0E6DC;
+}
+
+.employee-table tbody tr:hover td {
+    background-color: #E8D8C7;
+}
+
+.employee-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.employee-table tbody td:last-child {
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* ==============================
+   STATUS BADGES
+============================== */
+
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.status.active {
+    background-color: #DCEBDC;
+    color: #315B35;
+}
+
+.status.inactive {
+    background-color: #F4DADA;
+    color: #8A3030;
+}
+
+/* ==============================
+   EDIT AND DELETE BUTTONS
+============================== */
+
+.employee-table .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 2px;
+    padding: 7px 11px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: none;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.employee-table .edit-btn {
+    min-width: 85px;
+    background-color: #6D5140;
+    color: #FFFFFF;
+    border: 1px solid #6D5140;
+}
+
+.employee-table .edit-btn:hover {
+    background-color: #513B2E;
+    border-color: #513B2E;
+    color: #FFFFFF;
+}
+
+.employee-table .delete-btn {
+    min-width: 85px;
+    background-color: #F4DADA;
+    color: #8A3030;
+    border: 1px solid #D9B5B0;
+}
+
+.employee-table .delete-btn:hover {
+    background-color: #E8C2BE;
+    color: #702424;
+    border-color: #C99790;
+}
+
+.employee-table .edit-btn i,
+.employee-table .delete-btn i {
+    font-size: 13px;
+}
+
+/* ==============================
+   FOCUS ACCESSIBILITY
+============================== */
+
+.btn:focus-visible,
+.nav-link:focus-visible {
+    outline: 2px solid #513B2E;
+    outline-offset: 3px;
+}
